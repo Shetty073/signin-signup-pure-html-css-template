@@ -1,0 +1,113 @@
+html {
+    margin: 0;
+}
+
+body {
+    background: #344;
+    padding: 25px;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+/* paper */
+.fold {
+    postion: relative;
+    height: 425px;
+    padding: 25px;
+    background: #fff;
+}
+
+/* folding */
+.fold::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    right: calc(0.308 * 100vw);
+    border-style: solid;
+    border-width: 0 100px 100px 0;
+    border-color: #ddd #344;
+    transition: all ease 0.5s;
+}
+
+.fold:hover::before {
+    border-width: 0 150px 150px 0;
+    border-color: #eee #344;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+label {
+    display: block;
+    width: max-content;
+    margin-bottom: 4px;
+    font-weight: 600;
+    color: #334444;
+}
+
+input {
+    display: block;
+    width: 60%;
+    height: 20px;
+    margin-bottom: 18px;
+}
+
+input::focus {
+    outline: #334444 !important;
+}
+
+form {
+    display: inline;
+    padding-left: 25px;
+}
+
+#avatar {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    padding-bottom: 25px;
+    padding-left: 35px;
+}
+
+.btn-main {
+    background: #334444;
+    color: aliceblue;
+    font-size: 23px;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.btn-main:hover {
+    background: #2a3838;
+    cursor: pointer;
+}
+
+.btn-main:focus {
+    outline: none;
+}
+
+.color-dirt-green {
+    color: #334444;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* For mobile devices */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .fold::before {
+        right: calc(0.1 * 100vw);
+    }
+
+    input {
+        width: 95%;
+    }
+}

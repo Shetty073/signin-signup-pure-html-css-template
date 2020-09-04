@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Signin</title>
+        <link rel="stylesheet" type="text/css" href="./css/main.css" />
+        <style>
+            .fold {
+                height: 625px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="fold">
+                <h1 class="color-dirt-green">Create a new account</h1>
+                <img id="avatar" src="./assets/images/avatar.png" />
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="#email">Email:</label>
+                        <input type="text" name="email" id="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="#username">Username:</label>
+                        <input
+                            type="text"
+                            name="username"
+                            id="username"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="#password1">Password:</label>
+                        <input
+                            type="text"
+                            name="password1"
+                            id="password1"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="#password2">Confirm password:</label>
+                        <input
+                            type="text"
+                            name="password2"
+                            id="password2"
+                            required
+                        />
+                    </div>
+                    <button class="btn-main" type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
