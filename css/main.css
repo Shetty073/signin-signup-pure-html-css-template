@@ -11,8 +11,7 @@ body {
 
 /* paper */
 .fold {
-    postion: relative;
-    height: 425px;
+    height: 440px;
     padding: 25px;
     background: #fff;
 }
@@ -95,6 +94,17 @@ form {
     color: #334444;
     margin-top: 5px;
     padding-bottom: 5px;
+}
+
+.error-text {
+    display: none;
+    padding-top: 3px;
+    padding-left: 4px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 0, 0, 0.15);
+    color: red;
+    background: rgba(255, 0, 0, 0.15);
 }
 
 /* For mobile devices */

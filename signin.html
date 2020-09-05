@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Signin</title>
+        <title>Sign in</title>
         <link rel="stylesheet" type="text/css" href="./css/main.css" />
     </head>
     <body>
@@ -23,12 +23,13 @@
                     <div class="form-group">
                         <label for="#password">Password:</label>
                         <input
-                            type="text"
+                            type="password"
                             name="password"
                             id="password"
                             required
                         />
                     </div>
+                    <div class="color-dirt-green error-text">You</div>
                     <button class="btn-main" id="btn-submit" type="button">
                         Sign in
                     </button>
@@ -44,8 +45,19 @@
 
                     if (password.length >= 8 && password.length <= 16) {
                         // Valid password length
-                    } esle {
+                    } else {
                         // invalid string
+                        document.getElementsByClassName(
+                            "error-text"
+                        )[0].style.display = "block";
+                        document.getElementsByClassName(
+                            "error-text"
+                        )[0].innerText = "Invalid password length";
+                        setTimeout(function f() {
+                            document.getElementsByClassName(
+                                "error-text"
+                            )[0].style.display = "none";
+                        }, 5000);
                     }
                 });
         </script>
